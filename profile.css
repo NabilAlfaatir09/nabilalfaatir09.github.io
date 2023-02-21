@@ -117,10 +117,31 @@ footer .credit a{
     html{
         font-size: 62.5%;
     }
+
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        margin-left: 22rem;
+        margin-top: 30rem;
+    }
+
+
+    .about .card-about img{
+        margin-bottom: 2rem;
+        width: 70px;
+        height: 70px;
+    }
+
+    footer{
+        margin-top: 11rem;
+    }
 }
+
 /* handphone */
 @media (max-width: 450px){
     html{
         font-size: 55%;
     }
+
 }
