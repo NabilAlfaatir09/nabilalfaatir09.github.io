@@ -1,0 +1,126 @@
+:root {
+    --primary: #1bb2e8;
+    --bg: #010101;
+    --clr: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr);
+    color: var(--bg);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.1rem 6%;
+    background-color: rgba(27, 178, 232, 0.9);
+    border-bottom:1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+nav .navbar{
+    margin-left: 1rem;
+}
+
+.nav-img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+nav .navbar a {
+    color: var(--clr);
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0.1rem;
+}
+
+nav .navbar a:hover{
+    color: var(--bg);
+}
+
+nav .navbar a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--bg);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+nav .navbar a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30rem;
+    margin-left: 40rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 60px 400px;
+    width: 370px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.034);
+    border: 1px solid var(--clr);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 40px 0 rgba(29, 29, 29, 0.203);
+}
+
+.about .card-about img{
+    margin-bottom: 4rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0.3rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a{
+    color: var(--bg);
+    font-weight: 700;
+}
+
+
+/* media query */
+
+/* tablet */
+@media (max-width: 758px){
+    html{
+        font-size: 62.5%;
+    }
+}
+/* handphone */
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+}
